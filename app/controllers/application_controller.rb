@@ -40,10 +40,10 @@ class ApplicationController < Sinatra::Base
       erb :show
     end
 
-    get '/posts/:id/' do  #loads show page
-      @post = Post.find_by_id(params[:id])
-      erb :delete
-    end
+    #get '/posts/:id/' do  #loads show page
+    #  @post = Post.find_by_id(params[:id])
+    #  erb :delete
+    #end
 
     delete '/posts/:id/delete' do #delete action
     @post = Post.find_by_id(params[:id])
